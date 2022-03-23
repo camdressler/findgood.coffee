@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Work Sans";
+  font-weight: normal;
+  src: url("/fonts/WorkSans[wght].ttf") format("truetype");
+}
+
+* {
+  font-family: "Work Sans", sans-serif !important;
+}
+
+html {
+  background-color: #0c0b0f;
+  background-size: cover;
+}
