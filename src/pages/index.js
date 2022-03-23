@@ -5,7 +5,9 @@ import Head from "next/Head";
 export default function Index() {
   return (
     <div>
-      <Head></Head>
+      <Head>
+        
+      </Head>
     </div>
   );
 }
