@@ -1,12 +1,48 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  mode: "jit",
+  purge: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  plugins: [
+    function ({ addComponents }) {
+      const searchBox = {
+        ".msbx": {
+          outline: "none",
+          borderColor: "transparent",
+          opacity: 0.5,
+          "&:hover": {
+            opacity: 0.6,
+          },
+          "&:focus": {
+            opacity: 0.6,
+          },
+        },
+      };
+
+      addComponents(searchBox);
+    },
+  ],
+  darkMode: false,
   theme: {
-    extend: {},
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "976px",
+      xl: "1440px",
+    },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#ffffff",
+      black: "#000000",
+      brown: {
+        DEFAULT: "#6F4E37",
+      },
+    },
+    fontFamily: {
+      sans: ["Graphik", "sans-serif"],
+      serif: ["Merriweather", "serif"],
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 };

@@ -1,46 +1,30 @@
-import React from 'react';
+import React from "react";
 
 export default function SearchBox() {
-    return (
-        <div>
-            <div id="search-wrapper" className="flex flex-col p-6 shadow-lg rounded-lg">
-                <input
-                    type="text"
-                    id="search-bar"
-                    placeholder="Enter A Zip Code..."
-                    name="s" 
-                    style={{
-                        outlineColor: '#6F4E37'
-                    }}
-                    className="py-2 px-4 pr-64 mb-16 text-base font-normal text-gray-700 bg-clip-padding border border-solid border-brown-300 rounded transition ease-in-out duration-1000"
-                />
-                <div id="search-results" className="">
-
-                </div>
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div id="search-wrapper" className="flex shadow-lg rounded-lg align-middle p-4">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="City or Zip Code"
+          className="msbx w-full"
+        />
+        <span className="opacity-10 hover:cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  );
 }
-
-<input
-type="search"
-class="
-  form-control
-  block
-  w-full
-  px-3
-  py-1.5
-  text-base
-  font-normal
-  text-gray-700
-  bg-white bg-clip-padding
-  border border-solid border-gray-300
-  rounded
-  transition
-  ease-in-out
-  m-0
-  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-"
-id="exampleSearch"
-placeholder="Type query"
-/>
