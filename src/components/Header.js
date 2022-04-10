@@ -27,7 +27,7 @@ export default function Header() {
                   background: "white",
                   border: "2px solid #6F4E37",
                   boxSizing: "border-box",
-                  borderRadius: "9.9px",
+                  borderRadius: "10px",
                   color: "#6F4E37",
                 }}
                 className="px-4 py-2 items-center shadow-lg mr-4"
