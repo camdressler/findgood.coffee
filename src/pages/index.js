@@ -105,7 +105,7 @@ export default function Index() {
           </a>
         </div>
       </div>
-      <img src={require("../../public/assets/beans.png").default.src} className="fixed relative bottom-0" />
+      <img src={require("../../public/assets/beans.png").default.src} className="fixed bottom-0" />
     </div>
   );
 }
