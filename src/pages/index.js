@@ -58,7 +58,7 @@ export default function Index() {
         />
       </Head>
       <Header />
-      <div id="home" className="flex space-x-24 justify-center pt-16 m-4 mb-6">
+      <div id="home" className="flex flex-grow space-x-24 justify-center pt-16 m-4 mb-6">
         <div className="max-w-4xl">
           <h1 className=" text-4xl mb-6 text-center">
             Search for <span className="font-semibold">top-rated, </span>
@@ -70,7 +70,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <img src={require("../../public/assets/beans.png").default.src} className="fixed bottom-0" />
+      <Footer />
     </div>
   );
 }
