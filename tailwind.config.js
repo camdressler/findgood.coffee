@@ -5,8 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   plugins: [
-    require('./plugins/components'),
-    require('tailwind-scrollbar')
+    require('./plugins/components')
   ],
   darkMode: false,
   theme: {
@@ -21,6 +20,7 @@ module.exports = {
       current: "currentColor",
       white: "#ffffff",
       black: "#000000",
+      back: "#1F232C",
       brown: {
         "100": "#ede0d4",
         "200": "#e6ccb2",

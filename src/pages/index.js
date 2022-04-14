@@ -58,18 +58,24 @@ export default function Index() {
         />
       </Head>
       <Header />
-      <div
-        id="home"
-        className="flex flex-grow h-screen justify-center bg-brown-100"
-      >
-        <div className="max-w-4xl pt-16 m-4 mb-6">
-          <h1 className="text-4xl text-center text-brown-500 mb-6">
-            Search for{" "}
-            <span className="font-semibold text-brown-400">top-rated, </span>
-            <span className="text-brown">coffee </span> shops nearby
-          </h1>
-          <div className="mx-12 mb-48">
-            <SearchBox />
+      <div id="home" className="flex h-screen justify-center bg-back">
+        <div className="w-1/2 text-center text-brown-100 text-8xl">
+          LET US DO THE HARD WORK.
+        </div>
+        <div className="w-1/2">
+          <div className="max-w-4xl pt-16 m-4 mb-6">
+            <h1 className="text-4xl text-center text-brown-100 mb-6">
+              <span>SEARCH FOR </span>
+              <span className="font-semibold">TOP-RATED, </span>
+              <span className="text-brown-600">COFFEE </span>
+              <span>SHOPS NEARBY</span>
+            </h1>
+            <div className="mx-12 mb-4">
+              <SearchBox />
+            </div>
+            <h4 className="text-center text-brown-100">
+              WE FILTER OUT LARGE CORPORATIONS AND SUPPORT LOCAL CAFES
+            </h4>
           </div>
         </div>
       </div>

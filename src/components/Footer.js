@@ -2,8 +2,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bottom-0 fixed w-full">
-
+    <footer className="flex w-full items-center">
+      <span>Find Good Coffee</span>
+      <span>By Cam Dressler</span>
     </footer>
   );
 }

@@ -20,13 +20,13 @@ export default function SearchBox() {
     <div>
       <div
         id="search-wrapper"
-        className="flex bg-brown-200 box-shadow-lg shadow-brown-600 rounded-lg align-middle p-4"
+        className="flex bg-brown-100 box-shadow-lg rounded-lg align-middle p-4"
       >
         <input
           type="text"
           id="search-bar"
-          placeholder="Your Zip Code"
-          className="msbx w-full bg-brown-200 text-brown-500 placeholder-brown-600"
+          placeholder="YOUR ZIP CODE"
+          className="msbx w-full bg-brown-100 text-brown-600 placeholder-brown-600"
           value={state}
           onChange={(e) => handleChange(e)}
         />
