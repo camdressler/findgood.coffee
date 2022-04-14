@@ -5,23 +5,8 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   plugins: [
-    function ({ addComponents }) {
-      const searchBox = {
-        ".msbx": {
-          outline: "none",
-          borderColor: "transparent",
-          opacity: 0.5,
-          "&:hover": {
-            opacity: 0.6,
-          },
-          "&:focus": {
-            opacity: 0.6,
-          },
-        },
-      };
-
-      addComponents(searchBox);
-    },
+    require('./plugins/components'),
+    require('tailwind-scrollbar')
   ],
   darkMode: false,
   theme: {

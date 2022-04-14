@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 export default function Index() {
   return (
-    <div className="max-w-screen max-h-screen">
+    <div>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -57,8 +57,11 @@ export default function Index() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      <Header className="absolute" />
-      <div id="home" className="flex flex-grow justify-center bg-brown-100 ">
+      <Header />
+      <div
+        id="home"
+        className="flex flex-grow h-screen justify-center bg-brown-100"
+      >
         <div className="max-w-4xl pt-16 m-4 mb-6">
           <h1 className="text-4xl text-center text-brown-500 mb-6">
             Search for{" "}
