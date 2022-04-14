@@ -37,10 +37,6 @@ export default function SearchBox() {
           Search
         </span>
       </div>
-      <script
-        async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI7go8LvG7sh5_6p_BLt0qK1mDjJwtnlk&libraries=places&callback=initMap"
-      ></script>
     </div>
   );
 }
