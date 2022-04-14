@@ -58,30 +58,28 @@ export default function Index() {
         />
       </Head>
       <Header />
-      <section id="home" className="flex bg-back">
-        <div className="flex relative justify-center w-1/2 text-center text-brown-100 text-8xl mt-8">
-          LET US DO THE HARD WORK.
+      <section id="home" className="flex m-8">
+        <div className="flex realtive justify-center text-back text-8xl max-w-1/3">
+          <img src={require('../../public/assets/coffee.jpg').default.src} width="800" className="z-0"/>
         </div>
-        <div className="flex relative justify-center w-1/2 mt-14 mb-28">
-          <div className="max-w-4xl m-4 mb-6">
-            <h1 className="text-4xl text-center text-brown-100 mb-6">
+        <div className="flex absolute bg-white justify-center mr-8 z-10">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl text-center text-back">
               <span>SEARCH FOR </span>
               <span className="font-semibold">TOP-RATED, </span>
               <span className="text-brown-600">COFFEE </span>
               <span>SHOPS NEARBY</span>
             </h1>
-            <div className="mx-12 mb-4">
+            <div className="">
               <SearchBox />
             </div>
-            <h4 className="text-center text-brown-100">
+            <h4 classNamae="text-center text-back">
               WE FILTER OUT LARGE CORPORATIONS AND REVEAL THE BEST LOCAL CAFES
             </h4>
           </div>
         </div>
       </section>
-      <section id="about" className="flex bg-back">
-
-      </section>
+      <section id="about" className="flex bg-back"></section>
     </div>
   );
 }

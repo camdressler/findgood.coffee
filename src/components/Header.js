@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Header() {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-back p-6">
-      <div className="flex items-center flex-shrink-0 text-brown-100 mr-6">
-        <span className="font-semibold text-xl tracking-tight">FIND ☕️</span>
+    <nav className="flex items-center justify-between flex-wrap bg-transparent p-6">
+      <div className="flex items-center flex-shrink-0 text-back mr-6">
+        <span className="font-semibold text-xl tracking-tight">FIND GOOD ☕️</span>
       </div>
       <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+        <button class="flex items-right px-3 py-2 border rounded text-back">
           <svg
             class="fill-current h-3 w-3"
             viewBox="0 0 20 20"
@@ -18,17 +18,17 @@ export default function Header() {
           </svg>
         </button>
       </div>
-      <div class="inline-block text-sm py-2 leading-none rounded text-white hover:border-transparent mt-4 lg:mt-0">
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
           <a
             href="/login"
-            class="block mt-4 lg:inline-block lg:mt-0 text-brown-100 hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-back hover:text-white mr-4"
           >
             LOGIN
           </a>
           <a
             href="/signup"
-            class="block mt-4 lg:inline-block lg:mt-0 text-brown-100 hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-back hover:text-white mr-4"
           >
             SIGNUP
           </a>
