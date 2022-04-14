@@ -37,7 +37,12 @@ module.exports = {
       white: "#ffffff",
       black: "#000000",
       brown: {
-        DEFAULT: "#6F4E37",
+        "100": "#ede0d4",
+        "200": "#e6ccb2",
+        "300": "#ddb892",
+        "400": "#b08968",
+        "500": "#9c6644",
+        "600": "#7f5539",
       },
     },
     fontFamily: {
