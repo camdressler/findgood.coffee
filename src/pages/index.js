@@ -58,12 +58,12 @@ export default function Index() {
         />
       </Head>
       <Header />
-      <div id="home" className="flex h-screen justify-center bg-back">
-        <div className="w-1/2 text-center text-brown-100 text-8xl">
+      <section id="home" className="flex bg-back">
+        <div className="flex relative justify-center w-1/2 text-center text-brown-100 text-8xl mt-8">
           LET US DO THE HARD WORK.
         </div>
-        <div className="w-1/2">
-          <div className="max-w-4xl pt-16 m-4 mb-6">
+        <div className="flex relative justify-center w-1/2 mt-14 mb-28">
+          <div className="max-w-4xl m-4 mb-6">
             <h1 className="text-4xl text-center text-brown-100 mb-6">
               <span>SEARCH FOR </span>
               <span className="font-semibold">TOP-RATED, </span>
@@ -78,7 +78,10 @@ export default function Index() {
             </h4>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="about" className="flex bg-back">
+
+      </section>
     </div>
   );
 }

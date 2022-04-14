@@ -2,32 +2,36 @@ import React from "react";
 
 export default function Header() {
   return (
-    <nav className="bg-back py-4">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex">
-          <div>
-            <a href="#" className="flex items-left py-2 pl-8 gap-2">
-              <button className="bg-transparent border-none text-brown-100 text-4xl items-center px-4 py-2  mr-4">
-                ☕️
-              </button>
-            </a>
-          </div>
-          <div className="hidden md:flex items-center space-x-8 ml-auto">
-            <a href="/login">
-              <button
-                id="goToLogin"
-                className="bg-transparent border-none border-2 box-border rounded-lg text-brown-100 tems-center px-4 py-2  mr-4"
-              >
-                LOGIN
-              </button>
-              <button
-                id="goToSignup"
-                className="bg-transparent  border-brown-100 box-border rounded-lg text-brown-100 items-center px-4 py-2 "
-              >
-                SIGN UP
-              </button>
-            </a>
-          </div>
+    <nav className="flex items-center justify-between flex-wrap bg-back p-6">
+      <div className="flex items-center flex-shrink-0 text-brown-100 mr-6">
+        <span className="font-semibold text-xl tracking-tight">FIND ☕️</span>
+      </div>
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="inline-block text-sm py-2 leading-none rounded text-white hover:border-transparent mt-4 lg:mt-0">
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="/login"
+            class="block mt-4 lg:inline-block lg:mt-0 text-brown-100 hover:text-white mr-4"
+          >
+            LOGIN
+          </a>
+          <a
+            href="/signup"
+            class="block mt-4 lg:inline-block lg:mt-0 text-brown-100 hover:text-white mr-4"
+          >
+            SIGNUP
+          </a>
         </div>
       </div>
     </nav>
