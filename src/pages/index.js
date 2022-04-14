@@ -74,7 +74,7 @@ export default function Index() {
               <SearchBox />
             </div>
             <h4 className="text-center text-brown-100">
-              WE FILTER OUT LARGE CORPORATIONS AND SUPPORT LOCAL CAFES
+              WE FILTER OUT LARGE CORPORATIONS AND REVEAL THE BEST LOCAL CAFES
             </h4>
           </div>
         </div>
