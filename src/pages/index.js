@@ -58,25 +58,27 @@ export default function Index() {
         />
       </Head>
       <Header />
-      <section id="home" className="flex m-8">
-        <div className="flex realtive justify-center text-back text-8xl max-w-1/3">
-          <img src={require('../../public/assets/coffee.jpg').default.src} width="800" className="z-0"/>
-        </div>
-        <div className="flex absolute bg-white justify-center mr-8 z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl text-center text-back">
-              <span>SEARCH FOR </span>
-              <span className="font-semibold">TOP-RATED, </span>
-              <span className="text-brown-600">COFFEE </span>
-              <span>SHOPS NEARBY</span>
-            </h1>
-            <div className="">
-              <SearchBox />
-            </div>
-            <h4 classNamae="text-center text-back">
-              WE FILTER OUT LARGE CORPORATIONS AND REVEAL THE BEST LOCAL CAFES
-            </h4>
+      <section id="home" className="flex mx-12">
+        <div className="absolute bg-white backdrop-blur-lg bg-opacity-50 w-1/3 mt-32 py-4 pr-6 z-10">
+          <div className="text-4xl block mb-4">
+            <span className="text-brown-dark">SEARCH FOR </span>
+            <span className="text-brown-dark">TOP LOCAL </span>
+            <span className="text-brown-dark">COFFEE </span>
+            <span className="text-brown-dark">SHOPS</span>
           </div>
+          <span>
+            WE FILTER OUT LARGE COFFEE CHAINS AND REVEAL THE BEST LOCAL CAFES
+          </span>
+        </div>
+        <div className="absolute bg-white backdrop-blur-lg bg-opacity-50 w-1/3 mt-32 py-4 pr-6 z-10">
+            <SearchBox />
+          </div>
+        <div className="flex relative m-auto justify-center text-black text-8xl ">
+          <img
+            src={require("../../public/assets/coffee.jpg").default.src}
+            width="900"
+            className="z-0"
+          />
         </div>
       </section>
       <section id="about" className="flex bg-back"></section>

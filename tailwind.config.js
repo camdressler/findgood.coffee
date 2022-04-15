@@ -19,15 +19,10 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "#ffffff",
-      black: "#000000",
-      back: "#1F232C",
+      black: "#1F232C",
       brown: {
-        "100": "#ede0d4",
-        "200": "#e6ccb2",
-        "300": "#ddb892",
-        "400": "#b08968",
-        "500": "#9c6644",
-        "600": "#7f5539",
+        "light": "#ede0d4",
+        "dark": "#7f5539",
       },
     },
     fontFamily: {

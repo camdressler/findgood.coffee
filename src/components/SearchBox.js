@@ -26,12 +26,12 @@ export default function SearchBox() {
           type="text"
           id="search-bar"
           placeholder="YOUR ZIP CODE"
-          className="msbx w-1/3 bg-transparent text-back placeholder-back"
+          className="msbx bg-transparent text-black placeholder-black"
           value={state}
           onChange={(e) => handleChange(e)}
         />
         <span
-          className="text-back hover:cursor-pointer"
+          className="text-black hover:cursor-pointer hover:text-brown-dark"
           onClick={submit()}
         >
           GO
