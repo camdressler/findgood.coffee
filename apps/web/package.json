@@ -1,4 +1,9 @@
 {
+  "name": "www.findgood.coffee",
+  "version": "0.1.0",
+  "repository": "https://github.com/camdressler/www.findgood.coffee.git",
+  "author": "Cam Dressler <hello@camdressler.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -8,12 +13,16 @@
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-hot-toast": "^2.1.1"
+    "react-hot-toast": "^2.1.1",
+    "typescript": "^4.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",
     "@babel/preset-react": "^7.16.0",
+    "@types/node": "^18.7.23",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.2.6",
     "eslint": "^8.4.1",
     "eslint-config-airbnb": "^19.0.2",

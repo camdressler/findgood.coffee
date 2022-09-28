@@ -1,0 +1,42 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: "Work Sans";
+    font-weight: normal;
+    src: url("/fonts/WorkSans[wght].ttf") format("truetype");
+}
+
+* {
+    font-family: "Work Sans", sans-serif !important;
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121418;
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.blinking-cursor::after {
+    content: "|";
+    animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+    from,
+    to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
