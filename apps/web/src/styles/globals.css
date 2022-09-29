@@ -27,6 +27,11 @@ html {
     box-sizing: border-box;
 }
 
+input {
+    resize: none;
+    outline: none;
+}
+
 .blinking-cursor::after {
     content: "|";
     animation: blink 1s step-end infinite;

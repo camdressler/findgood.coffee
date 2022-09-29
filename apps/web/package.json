@@ -5,15 +5,15 @@
   "author": "Cam Dressler <hello@camdressler.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "start": "next dev",
+    "build": "next build"
   },
   "dependencies": {
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-toast": "^2.1.1",
+    "react-icons": "^4.4.0",
     "typescript": "^4.8.4"
   },
   "devDependencies": {
