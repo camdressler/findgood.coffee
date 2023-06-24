@@ -1,38 +1,42 @@
 {
-  "name": "www.findgood.coffee",
-  "version": "0.1.0",
-  "repository": "https://github.com/camdressler/www.findgood.coffee.git",
-  "author": "Cam Dressler <hello@camdressler.com>",
-  "license": "MIT",
-  "scripts": {
-    "start": "next dev",
-    "build": "next build"
-  },
-  "dependencies": {
-    "next": "^12.1.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-hot-toast": "^2.1.1",
-    "react-icons": "^4.4.0",
-    "react-type-animation": "^2.1.1",
-    "typescript": "^4.8.4"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.3",
-    "@babel/preset-react": "^7.16.0",
-    "@types/node": "^18.7.23",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "autoprefixer": "^10.2.6",
-    "eslint": "^8.4.1",
-    "eslint-config-airbnb": "^19.0.2",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "postcss": "^8.3.5",
-    "tailwind-scrollbar": "^1.3.1",
-    "tailwindcss": "^2.2.4"
-  }
+    "name": "findgood.coffee",
+    "version": "0.1.0",
+    "repository": "https://github.com/camdressler/findgoodcoffee.git",
+    "author": "Stino Systems LLC",
+    "scripts": {
+        "dev": "concurrently \"contentlayer dev\" \"next dev\"",
+        "build": "contentlayer build && next build",
+        "turbo": "next dev --turbo",
+        "start": "next start",
+        "lint": "next lint",
+        "preview": "next build && next start",
+        "postinstall": "prisma generate"
+    },
+    "dependencies": {
+        "next": "^12.1.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-hot-toast": "^2.1.1",
+        "react-icons": "^4.4.0",
+        "react-type-animation": "^2.1.1",
+        "typescript": "^4.8.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.0",
+        "@babel/eslint-parser": "^7.16.3",
+        "@babel/preset-react": "^7.16.0",
+        "@types/node": "^18.7.23",
+        "@types/react": "^18.0.21",
+        "@types/react-dom": "^18.0.6",
+        "autoprefixer": "^10.2.6",
+        "eslint": "^8.4.1",
+        "eslint-config-airbnb": "^19.0.2",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.27.1",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "postcss": "^8.3.5",
+        "tailwind-scrollbar": "^1.3.1",
+        "tailwindcss": "^2.2.4"
+    }
 }
