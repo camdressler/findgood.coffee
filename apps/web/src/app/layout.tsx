@@ -1,6 +1,7 @@
 import { description, fullDomain, fullSiteName } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
+
 interface RootLayoutProps {
     children: React.ReactNode;
 }
@@ -20,10 +21,6 @@ export const metadata = {
         }
     },
     keywords: ["Coffee", "Ratings", "Reviews", "Recommendation", "Cafe", "Finder", "Local", "Small Business"],
-    themeColor: [
-        { media: "(prefers-color-scheme: light)", color: "white" },
-        { media: "(prefers-color-scheme: dark)", color: "black" }
-    ],
     openGraph: {
         type: "website",
         locale: "en_US",
@@ -44,7 +41,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" suppressHydrationWarning>
             <head />
-            <body className={cn("min-h-screen bg-background antialiased")}>{children}</body>
+            <body className={cn("min-h-screen bg-background")}>{children}</body>
         </html>
     );
 }
