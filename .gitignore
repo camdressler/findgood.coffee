@@ -34,3 +34,5 @@ interface/components/TextViewer/prism.tsx
 
 # Stops from constant package.json changes showing up in commits
 package*.json
+
+packages/cafinder/data
